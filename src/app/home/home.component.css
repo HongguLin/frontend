@@ -1,0 +1,41 @@
+#searchBar{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+#searchInput{
+    width: 50%;
+}
+
+.searchContainer{
+    margin-top: 20px
+}
+.enlarge{
+    margin: unset;
+}
+.enlarge img{
+    width: 1000px;
+    height: 300px;
+    justify-content: center;
+}
+.searchBtn{
+    margin: 0 5px 0 5px;
+}
+.wrapper_skin_box{
+    background-image: url("./sky.jpeg");
+    background-size: cover;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wrapper_content_box{
+    position: relative;
+    padding-top: 350px;
+}
+.wrapper_home{
+    height: 500px;
+    position: relative;
+}

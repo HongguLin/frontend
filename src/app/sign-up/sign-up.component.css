@@ -1,0 +1,7 @@
+#signupDiv{
+    max-width:350px;
+}
+#signupBtn{
+    display: flex;
+    justify-content: center;
+}

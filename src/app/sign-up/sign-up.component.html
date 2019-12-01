@@ -1,0 +1,31 @@
+<div *ngIf='isSignedUp; else signupForm'>
+    Your registration is successful. Please login!
+</div>
+<ng-template #signupForm>
+  <div class="container" id="signupDiv">
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" [(ngModel)]="signupInfo.username" name="username">
+      </div>
+      
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" [(ngModel)]="signupInfo.email" name="email">
+      </div>
+      
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" [(ngModel)]="signupInfo.password" name="password">
+      </div>
+
+      <div class="form-group" id="signupBtn">
+        <button type="submit" class="btn btn-primary">Sign Up</button>       
+      </div>
+      <div *ngIf="f.submitted && isSignupFailed" class="alert alert-warning">
+        Signup failed!<br/>{{errorMessage}}
+      </div>
+    </form>
+  </div>
+</ng-template>
+

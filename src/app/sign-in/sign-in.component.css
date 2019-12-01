@@ -1,0 +1,7 @@
+#signinDiv{
+    max-width:350px;
+}
+#signinBtn{
+    display: flex;
+    justify-content: center;
+}

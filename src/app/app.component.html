@@ -1,0 +1,31 @@
+<nav class="navbar navbar-fix-top">
+  <div class="contain-fluid">
+    <div class="navbar-header">
+      <a class="logo" href="home">
+          <img id="icon" src="assets/BCat.jpeg">
+      </a>
+    </div>
+    <div class="width-limit">
+      <a class="btn home" routerLink="home">Home</a>
+
+      <a class="btn blogList" routerLink="blogList">Blog List</a>
+
+      <a *ngIf="authority === 'user'" class="btn userBoard" routerLink="user">User Board</a>
+
+      <a *ngIf="authority === 'admin'" class="btn" routerLink="admin">Admin Board</a>
+
+      <a *ngIf="!authority" class="btn signUp" routerLink="signUp">Sign Up</a>
+
+      <a *ngIf="!authority" class="btn signIn" routerLink="signIn">Sign In</a>
+
+      <a class="btn writeBlog" routerLink="blogWriter">Writer Blog</a>
+    </div>
+  </div>
+
+
+</nav>
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
